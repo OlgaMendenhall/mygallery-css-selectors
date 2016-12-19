@@ -1,0 +1,62 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5;
+	color: #384047;
+	padding: 10px 0 80px;
+}
+div {
+	max-width: 610px;
+	margin: auto;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+li {
+	margin-bottom: 14px;
+}
+a {
+	color: #4183c4;
+}
+
+/* Substring Matching Attribute Selectors ---- */
+
+a[href^="http://"] { /* ^ tells the browser to match a piece of code - "http://" -that’s at the beginning of a link's href attribute value */
+  color: #52bab3;
+  text-decoration: none;
+  background-repeat:no-repeat;   /* our icons will be as a background pics, and here we tell them not to go on the whole width of our viewport */
+  background-size: 18px 18px;   /*  size of our icons */ 
+  padding-left: 25px;           /*  space after icons before the links, so this style applied to the links not to icons */
+}
+
+a[href$=".pdf"] {   /*  $ tells the browser to match a substring - that's at the end of an attribute's value - .pdf in this case */
+  background-image: url('../img/icn-pdf.svg');
+}
+
+a[href$=".jpg"] {   /*  here the browser will put "icn-picture.svg" to a html link that ends with .jpg */
+  background-image: url('../img/icn-picture.svg');
+}
+
+a[href$=".zip"] {   
+  background-image: url('../img/icn-zip.svg');
+}
+
+img[src*="thumb"] { /*  here we targeting any element, whose href atribute contains the word 'thumb' anywhere in a value */
+  margin: 4px;
+  border: solid 2px;
+  width: 180px;
+  height: 140px;
+}
+
+img[src*="lake"] {
+  border-color: red;
+}
+
+
+
+
+
+
+
+
+
