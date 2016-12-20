@@ -21,7 +21,7 @@ a {
 
 /* Substring Matching Attribute Selectors ---- */
 
-a[href^="http://"] { /* ^ tells the browser to match a piece of code - "http://" -that’s at the beginning of a link's href attribute value */
+a[href^="https://"] { /* ^ tells the browser to match a piece of code - "http://" -that’s at the beginning of a link's href attribute value */
   color: #52bab3;
   text-decoration: none;
   background-repeat:no-repeat;   /* our icons will be as a background pics, and here we tell them not to go on the whole width of our viewport */
